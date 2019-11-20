@@ -10,14 +10,14 @@ class App extends Component {
             <div>
                 <h1>Simple SPA</h1>
                 <ul className="header">
-                    <li><NavLink exact to="/">Home</NavLink></li>
-                    <li><NavLink to="/docs">Doc</NavLink></li>
-                    <li><NavLink to="/examples">Example</NavLink></li>
+                    <li><NavLink exact to={process.env.PUBLIC_URL + "/"}>Home</NavLink></li>
+                    <li><NavLink to={process.env.PUBLIC_URL + "/docs"}>Doc</NavLink></li>
+                    <li><NavLink to={process.env.PUBLIC_URL + "/examples"}>Example</NavLink></li>
                 </ul>
                 <div className="content">
-                    <Route exact path="/" component={Home} />
-                    <Route path="/docs" component={Doc} />
-                    <Route path="/examples" component={Example} />
+                    <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />
+                    <Route path={process.env.PUBLIC_URL + "/docs"} component={Doc} />
+                    <Route path={process.env.PUBLIC_URL + "/examples"} component={Example} />
                 </div>
             </div>
             </HashRouter>
