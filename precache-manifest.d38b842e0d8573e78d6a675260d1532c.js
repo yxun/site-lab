@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "39481b8f4aa5df9c7517a22c5ab742bc",
+    "revision": "c1fafa68be62d8143bd8b5e1bde90b7e",
     "url": "/yxun/site-lab/index.html"
   },
   {
-    "revision": "d3e7820af2684653b703",
+    "revision": "0e81e9225f1790f1d402",
     "url": "/yxun/site-lab/static/css/main.afb0d04b.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/yxun/site-lab/static/js/2.10fedaf8.chunk.js"
   },
   {
-    "revision": "d3e7820af2684653b703",
-    "url": "/yxun/site-lab/static/js/main.fad3e42d.chunk.js"
+    "revision": "0e81e9225f1790f1d402",
+    "url": "/yxun/site-lab/static/js/main.a6c753cf.chunk.js"
   },
   {
     "revision": "61bab2433fda5d2233d9",

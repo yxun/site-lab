@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/yxun/site-lab/precache-manifest.9f573f5eb404efa841a9e07478786172.js"
+  "/yxun/site-lab/precache-manifest.d38b842e0d8573e78d6a675260d1532c.js"
 );
 
 self.addEventListener('message', (event) => {
