@@ -1,28 +1,29 @@
-import React, { Component } from "react";
-import { Route, NavLink, HashRouter } from "react-router-dom";
-import { Home, Doc, Example } from "./Pages";
+import React, { Fragment } from 'react';
+import { Container, Row, Col } from 'reactstrap';
 
+import Post from './components/Post';
+import Header from './components/Header';
+import SideCard from './components/SideCard';
 
-class App extends Component {
-    render() {
-        return (
-            <HashRouter>
-            <div>
-                <h1>Simple SPA</h1>
-                <ul className="header">
-                    <li><NavLink exact to={process.env.PUBLIC_URL + "/"}>Home</NavLink></li>
-                    <li><NavLink to={process.env.PUBLIC_URL + "/docs"}>Doc</NavLink></li>
-                    <li><NavLink to={process.env.PUBLIC_URL + "/examples"}>Example</NavLink></li>
-                </ul>
-                <div className="content">
-                    <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />
-                    <Route path={process.env.PUBLIC_URL + "/docs"} component={Doc} />
-                    <Route path={process.env.PUBLIC_URL + "/examples"} component={Example} />
-                </div>
-            </div>
-            </HashRouter>
-        );
-    }
-}
+const App = () => (
+    <Fragment>
+        <Header />
+
+        <main className="my-5 py-5">
+            <Container className="px-0">
+                <Row noGutters className="pt-2 pt-md-5 w-100 px-4 px-xl-0 position-relative">
+                    <Col xs={{ order: 2 }} md={{ size: 4, order: 1 }} tag="aside" className="pb-5 mb-5 pb-md-0 mb-md-0 mx-auto mx-md-0">
+                        <SideCard />
+                    </Col>
+
+                    <Col xs={{ order: 1 }} md={{ size: 7, offset: 1 }} tag="section" className="py-5 mb-5 py-md-0 mb-md-0">
+                        <Post />
+                    </Col>
+                </Row>
+            </Container>
+        </main>
+
+    </Fragment>
+);
 
 export default App;
