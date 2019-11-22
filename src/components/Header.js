@@ -6,8 +6,8 @@ import {
     DropdownToggle, DropdownMenu, DropdownItem
 } from 'reactstrap';
 
-const logo = process.env.PUBLIC_URL + 'images/logo512.png';
-const icon = process.env.PUBLIC_URL + 'images/favicon.ico';
+const logo = process.env.PUBLIC_URL + '/images/logo512.png';
+const icon = process.env.PUBLIC_URL + '/images/favicon.ico';
 
 const Header = () => (
     <header>

@@ -5,7 +5,7 @@ import {
     CardTitle, CardSubtitle, CardText
 } from 'reactstrap';
 
-const banner = process.env.PUBLIC_URL + 'images/logo512.png';
+const banner = process.env.PUBLIC_URL + '/images/logo512.png';
 
 const SideCard = () => (
     <Fragment>
