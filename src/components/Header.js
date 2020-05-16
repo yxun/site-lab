@@ -6,7 +6,6 @@ import {
     DropdownToggle, DropdownMenu, DropdownItem
 } from 'reactstrap';
 
-const logo = process.env.PUBLIC_URL + '/images/logo512.png';
 const icon = process.env.PUBLIC_URL + '/images/favicon.ico';
 
 const Header = () => (
@@ -25,15 +24,15 @@ const Header = () => (
                             </NavItem>
 
                             <NavItem className="d-flex align-items-center">
-                                <NavLink className="font-weight-bold" href={process.env.PUBLIC_URL + "/"}>Home</NavLink>
+                                <NavLink className="font-weight-bold" href="https://github.com/yxun/site-lab">Github</NavLink>
                             </NavItem>
 
                             <NavItem className="d-flex align-items-center">
-                                <NavLink className="font-weight-bold" href={process.env.PUBLIC_URL + "/"}>About</NavLink>
+                                <NavLink className="font-weight-bold" href={process.env.PUBLIC_URL + "/"}>首页</NavLink>
                             </NavItem>
 
                             <UncontrolledDropdown className="d-flex align-items-center" nav inNavbar>
-                                <DropdownToggle className="font-weight-bold" nav caret>Learn</DropdownToggle>
+                                <DropdownToggle className="font-weight-bold" nav caret>分类</DropdownToggle>
                                 <DropdownMenu right>
                                     <DropdownItem className="font-weight-bold text-secondary text-uppercase" header disabled>Learn React</DropdownItem>
                                     <DropdownItem divider />
@@ -43,12 +42,6 @@ const Header = () => (
                                 </DropdownMenu>
                             </UncontrolledDropdown>
                         </Nav>
-                    </Col>
-
-                    <Col className="d-flex justify-content-xs-start justify-content-lg-center">
-                        <NavbarBrand className="d-inline-block p-0" href="/" style={{ width: 80 }}>
-                            <img src={logo} alt="logo" className="position-relative img-fluid" />
-                        </NavbarBrand>
                     </Col>
 
                     <Col className="d-none d-lg-flex justify-content-end">
