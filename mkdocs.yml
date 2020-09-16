@@ -1,0 +1,16 @@
+site_name: My Docs
+theme:
+  name: material
+  features:
+    - navigation.expand
+    - header.hide
+  icon:
+    repo: fontawesome/brands/git-alt
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yxun
+
+repo_name: yxun/site-lab
+repo_url: https://github.com/yxun/site-lab
