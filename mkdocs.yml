@@ -16,5 +16,5 @@ repo_name: yxun/site-lab
 repo_url: https://github.com/yxun/site-lab
 
 nav:
-  - Getting Started: notebook.md
+  - Getting Started: index.md
   - mkdocs: mkdocs.md
